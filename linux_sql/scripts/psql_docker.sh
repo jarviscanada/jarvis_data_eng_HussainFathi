@@ -48,8 +48,8 @@ case $cmd in
   ;;
 
   *)
-echo 'Illegal command'
-echo 'Commands: start|stop|create'
-exit 1
-;;
+  echo 'Illegal command'
+  echo 'Commands: start|stop|create'
+  exit 1
+  ;;
 esac
