@@ -23,6 +23,7 @@ case $cmd in
     exit 0
   fi
 
+  #username and password required to create container
   if [ $# -ne 3 ]; then
     echo 'Create requires username and password'
     exit 1
