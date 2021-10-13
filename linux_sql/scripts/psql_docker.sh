@@ -17,7 +17,7 @@ case $cmd in
   #create the container
   create)
 
-  #Check if container al
+  #Check if container already exists
   if [ $container_status -eq 0 ]; then
     echo 'Container already exists'
     exit 0
