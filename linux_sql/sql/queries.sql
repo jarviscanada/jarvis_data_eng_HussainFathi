@@ -19,7 +19,7 @@ FROM host_usage, host_info
 GROUP BY host_usage.host_id, host_info.hostname, round5(host_usage.timestamp)
 ORDER BY host_usage.host_id, round5(host_usage.timestamp)
 
---query to detect host failure base on the number of data points in a 5 min interval
+--query to detect host failure based on the number of data points in a 5 min interval
 SELECT host_id, round5(timestamp), COUNT(round5(timestamp)) as num_data_points
 FROM host_usage
 GROUP BY host_id, round5(timestamp)
