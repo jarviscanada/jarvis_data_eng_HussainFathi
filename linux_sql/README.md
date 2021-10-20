@@ -1,13 +1,11 @@
 # Linux Cluster Usage Administration
 
 ## Introduction
-The purpose of this project is to monitor hardware and usage data of each linux
+The purpose of this project is to monitor the hardware and usage data of each linux
 machine in a cluster, connected together through a network switch. 
 The machine's usage data is obtained every one minute using crontab and
-stored in a PostgreSQL database.
-
-In this project pulling the machine's information and contracting the database
-will be demonstrated 
+stored in a PostgreSQL database. A collections of SQL queries can be executed to analyze the 
+machine's performace.
 
 Technologies Used:
 * Linux
@@ -76,7 +74,7 @@ The figure below illustrates the architecture employed for this project. The `ho
 `host_usage.sh` bash scripts will have to be executed on all Linux hosts while the PostgresSQL
 will be shared across them. The SQL queries can be executed to analyze the data.
 
-![](/assets/Architecture.jpg)
+![Architecture](assets/Architecture.jpg)
 
 ### Scripts
 The Scripts employed in this project are:
@@ -149,11 +147,11 @@ The data which are collected are displayed in the following two tables:
 |`disk_available` | Amount of memory space available at the root directory|
 |`"timestamp"` | The time of when the information is retrieved|
 
-##Test
+## Test
 The following project was tested on a linux environment running the **CentOS7** distribution system. Below is an output of a query
-that averages the memory usage over five minute intervals.
+that averages the memory usage percentage over a five minute interval.
 
-![](/assets/database_output.JPG)
+![database_output](assets/database_output.JPG)
 
 *NOTE: FLOAT was used instead of INT for the avg_used_mem_percentage column since the values are too small*
 
