@@ -5,7 +5,7 @@ The purpose of this project is to monitor the hardware and usage data of each li
 machine in a cluster, connected together through a network switch. 
 The machine's usage data is obtained every one minute using crontab and
 stored in a PostgreSQL database. A collections of SQL queries can be executed to analyze the 
-machine's performace.
+machine's usage data.
 
 Technologies Used:
 * Linux
@@ -163,7 +163,7 @@ that averages the memory usage percentage over a five minute interval.
 
 ## Improvements
 * Combine the bash scripts into one file instead of having to run multiple files.
-* Obtain more usage data from the machine and add more queries to analyze the machine's performance in more detail as well as 
+* Obtain more usage data from the machine and add more queries to analyze the machine's usage data in more detail as well as 
 display the output from the queries in a more readable format (i.e. for displaying system failure).
 * Automatically track the hardware data, instead of having to run the host_info script everytime there are new 
 changes in the host information.
