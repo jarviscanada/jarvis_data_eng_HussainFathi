@@ -34,8 +34,3 @@ export PGPASSWORD=$psql_password
 #Insert data into the host_info table
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 exit $?
-
-
-
-
-
