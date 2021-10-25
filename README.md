@@ -42,6 +42,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
 
 **Software Engineer Intern, Department of National Defence (2020)**: Worked in the Radar Electronic Warfare (REW) team within the Defense Research and Development Canada agency (DRDC) which is aimed to provide the Canadian Armed Forces with modern radar detection technology. Employed advanced signal processing techniques and machine learning tools such as neural networks, random forest, and Support Vector Machines (SVM) to classify different categories of cognitive radars.
 
+**Software Developer Intern, Adlib Software (2019)**: Worked in an interdisciplinary Agile team environment and interacted with Business Analysts, Product Owners, and other stakeholders regularly to discuss new product requirements and specifications. Took part in back-end development and front-end web development to implement new functionalities to the enterprise software.
+
 
 ## Education
 **McMaster University (2016-2021)**, Bachelor of Engineering, Electrical and Biomedical Engineering
