@@ -1,27 +1,23 @@
 # Hussain Fathi . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+I am a recent Electrical and Biomedical Engineering graduate from McMaster University. I'm currently working as a Data Engineer at Jarvis Consulting, taking part in multiple projects such as the Linux Cluster Usage Administration, Java Grepp and Java Twitter apps. In addition to Jarvis, I'm also currently working as a Software Engineer at a startup company based in Toronto. My role is centered around designing, developing and testing an enterprise level platform targeted towards helping international startup companies to enter the North American markets. Throughout my undergraduate career, I have completed 16 months worth of internship experiences in the fields of Machine Learning and Software development at the Department of National Defence in Ottawa and Adlib Software. I'm really passionate about computer science because it can also be employed in our daily lives as it introduces a different way of thinking about certain aspects of life.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Node.js, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** Python, Keras, NumPy, Scikit-learn, Docker
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Google Cloud Platform, .NET framework, React, Express.js, Angular
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](https://github.com/jarviscanada/jarvis_data_eng_demo)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Designed, developed and tested a Linux cluster usage administration agent that allows the user to analyze the usage data of different machines that are connected together through a network switch. A PSQL docker container was employed in this project in order to store the machine's usage and hardwate data that are obtained by executing two different bash scripts. Crontab was used to retrieve the machine's usage data every one minute and inserting it into the PostgreSQL database. Finally, multiple SQL queries can be executed to analyze the data.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]: In progress!
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
 
@@ -35,30 +31,24 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](http
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Athletic Tracking Assistant | Final Year Capstone Project**: Designed and built a smart video capturing device that follows a target throughout a training session or a game in order to provide real time athletic performance. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis (2021-present)**: Took part in an Agile work environment as a data engineer and lead various sprint meetings. Implemented various software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Engineer, LatAm Startups (2021-present)**: Participated in internal and customer driven design reviews to discuss the functionalities that needs to be incorporated in the platform. Employed MEAN stack technologies to develop an enterprise platform from client to server to database
+
+**Software Engineer Intern, Department of National Defence (2020)**: Worked in the Radar Electronic Warfare (REW) team within the Defense Research and Development Canada agency (DRDC) which is aimed to provide the Canadian Armed Forces with modern radar detection technology. Employed advanced signal processing techniques and machine learning tools such as neural networks, random forest and Support Vector Machines (SVM) to classify different categories of cognitive radars.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**McMaster University (2016-2021)**, Bachelor of Engineering, Electrical and Biomedical Engineering
+- Granted enrollment in the Biomedical Program due to highly competitive first year grades.
+- GPA: 3.3/4.0
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Best electronic hardware device awarded by the Electrical and Computer Engineering Department (ECE) at McMaster University for the final year capstone project.
+- Volunteer, VP Media @ McMaster Planetary Society (2019-2020): Worked in a team of 7 other executive members to promote, plan and host space related events to McMaster University students.

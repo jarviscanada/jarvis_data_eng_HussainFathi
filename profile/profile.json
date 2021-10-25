@@ -2,48 +2,31 @@
   "education": [
     {
       "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
+        "Granted enrollment in the Biomedical Program due to highly competitive first year grades.",
+        "GPA: 3.3/4.0"
       ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
-    },
-    {
-      "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "degree": "Bachelor of Engineering",
+      "department": "Electrical and Biomedical Engineering",
+      "duration": "2016-2021",
+      "school_name": "McMaster University"
     }
   ],
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
-    },
-    {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Designed and built a smart video capturing device that follows a target throughout a training session or a game in order to provide real time athletic performance. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department.",
       "git_url": null,
-      "name": "Machine Learning"
+      "name": "Athletic Tracking Assistant | Final Year Capstone Project"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Designed, developed and tested a Linux cluster usage administration agent that allows the user to analyze the usage data of different machines that are connected together through a network switch. A PSQL docker container was employed in this project in order to store the machine's usage and hardwate data that are obtained by executing two different bash scripts. Crontab was used to retrieve the machine's usage data every one minute and inserting it into the PostgreSQL database. Finally, multiple SQL queries can be executed to analyze the data.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
-      "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      ],
+      "description": "In progress!",
       "git_url": "/core_java",
       "name": "Core Java Apps"
     },
@@ -77,21 +60,13 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
-      ],
-      "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
+        "Best electronic hardware device awarded by the Electrical and Computer Engineering Department (ECE) at McMaster University for the final year capstone project."
       ],
       "title": "Awards"
     },
     {
       "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Volunteer, VP Media @ McMaster Planetary Society (2019-2020): Worked in a team of 7 other executive members to promote, plan and host space related events to McMaster University students."
       ],
       "title": "Activities/Hobbies"
     }
@@ -99,39 +74,46 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
-      "title": "Software Developer"
+      "description": "Took part in an Agile work environment as a data engineer and lead various sprint meetings. Implemented various software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash",
+      "duration": "2021-present",
+      "title": "Data Engineer"
     },
     {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
+      "company": "LatAm Startups",
+      "description": "Participated in internal and customer driven design reviews to discuss the functionalities that needs to be incorporated in the platform. Employed MEAN stack technologies to develop an enterprise platform from client to server to database",
+      "duration": "2021-present",
+      "title": "Software Engineer"
+    },
+    {
+      "company": "Department of National Defence",
+      "description": "Worked in the Radar Electronic Warfare (REW) team within the Defense Research and Development Canada agency (DRDC) which is aimed to provide the Canadian Armed Forces with modern radar detection technology. Employed advanced signal processing techniques and machine learning tools such as neural networks, random forest and Support Vector Machines (SVM) to classify different categories of cognitive radars.",
+      "duration": "2020",
+      "title": "Software Engineer Intern"
     }
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Python",
+      "Keras",
+      "NumPy",
+      "Scikit-learn",
+      "Docker"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "Google Cloud Platform",
+      ".NET framework",
+      "React",
+      "Express.js",
+      "Angular"
     ],
     "proficient": [
       "Java",
+      "Node.js",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
       "Git"
     ]
   },
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit."
+  "summary": "I am a recent Electrical and Biomedical Engineering graduate from McMaster University. I'm currently working as a Data Engineer at Jarvis Consulting, taking part in multiple projects such as the Linux Cluster Usage Administration, Java Grepp and Java Twitter apps. In addition to Jarvis, I'm also currently working as a Software Engineer at a startup company based in Toronto. My role is centered around designing, developing and testing an enterprise level platform targeted towards helping international startup companies to enter the North American markets. Throughout my undergraduate career, I have completed 16 months worth of internship experiences in the fields of Machine Learning and Software development at the Department of National Defence in Ottawa and Adlib Software. I'm really passionate about computer science because it can also be employed in our daily lives as it introduces a different way of thinking about certain aspects of life."
 }
