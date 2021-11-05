@@ -1,8 +1,8 @@
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -77,8 +77,6 @@ public class JavaGrepImpl implements JavaGrep {
         return lines;
     }
 
-
-
     @Override
     public boolean containsPattern(String line) throws IOException {
         Pattern pattern = Pattern.compile(regex);
@@ -89,7 +87,9 @@ public class JavaGrepImpl implements JavaGrep {
 
     @Override
     public void writeToFile(List<String> lines) throws IOException {
-        BufferedWriter bw = new BufferedWriter(new FileWriter(rootPath + '/' + outFile));
+        File file = new File(outFile);
+        file.createNewFile();
+        BufferedWriter bw = new BufferedWriter(new FileWriter(file));
         for (String line : lines){
             bw.write(line + "\n");
         }
