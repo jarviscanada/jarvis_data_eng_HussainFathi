@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class JavaGrepLambdaImp extends JavaGrepImpl{
+public class JavaGrepLambdaImp extends JavaGrepImp{
 
     public static void main(String[] args) {
         if (args.length != 3){
