@@ -4,8 +4,8 @@
 The purpose of this project is to automate the process of searching through multiple files in order to find
 specific keywords. Given a directory, the following app searches through all the files and outputs a text file
 containing all the lines that matches a specified regex pattern. The app is developed in Java using IntelliJ Idea
-and Maven as the project management tool. For better efficiency Java Stream APIs are employed. The app
-is packaged using Docker.
+and Maven as the project management tool. For better efficiency Java Stream APIs were employed. The app
+was packaged using Docker.
 
 ## Quick Start
 1. Firstly pull the Docker image from DockerHub:
