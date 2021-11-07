@@ -1,6 +1,6 @@
 # Hussain Fathi . Jarvis Consulting
 
-I am a recent Electrical and Biomedical Engineering graduate from McMaster University. I'm currently working as a Data Engineer at Jarvis Consulting, taking part in multiple projects such as the Linux Cluster Usage Administration, Java Grepp and Java Twitter apps. In addition to Jarvis, I'm also currently working as a Software Engineer at a startup company based in Toronto. My role is centered around designing, developing, and testing an enterprise-level platform targeted towards helping international startup companies to enter the North American markets. Throughout my undergraduate career, I have completed 16 months worth of internship experiences in the fields of Machine Learning and Software development at the Department of National Defence in Ottawa and Adlib Software. I'm really passionate about computer science because it can also be employed in our daily lives.
+I am a recent Electrical and Biomedical Engineering graduate from McMaster University. I'm currently working as a Data Engineer at Jarvis Consulting, taking part in multiple projects such as the Linux Cluster Usage Administration, Java Grep and Java Twitter apps. In addition to Jarvis, I'm also currently working as a Software Engineer at a startup company based in Toronto. My role is centered around designing, developing, and testing an enterprise-level platform targeted towards helping international startup companies to enter the North American markets. Throughout my undergraduate career, I have completed 16 months worth of internship experiences in the fields of Machine Learning and Software development at the Department of National Defence in Ottawa and Adlib Software. I'm really passionate about computer science because it introduces a way of thinking that can be used to address specific problems we're facing in our daily lives.
 
 ## Skills
 
@@ -15,9 +15,13 @@ I am a recent Electrical and Biomedical Engineering graduate from McMaster Unive
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFathi](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/linux_sql)]: Designed, developed, and tested a Linux cluster usage administration agent that allows the user to analyze the usage data of different machines that are connected together through a network switch. A PSQL docker container was employed in this project in order to store the machine's usage and hardware data that are obtained by executing two different bash scripts. Crontab was used to retrieve the machine's usage data every one minute and insert it into the PostgreSQL database. Finally, multiple SQL queries can be executed to analyze the data.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/linux_sql)]: Designed, developed, and tested a Linux cluster usage administration agent that allows the user to analyze the usage data of different Linux machines connected together through a network switch. A PSQL docker container was employed in this project to store the machine's usage and hardware data that are obtained by executing two different bash scripts. Crontab was used to automate the data acquisition and the database insertion process of the usage data. Finally, multiple SQL queries can be executed to analyze the data.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/core_java)]: In progress!
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/core_java)]:
+      
+  - **Grep App**: Developed a Java application that searches through all the files in a given directory and outputs a text file containing all the lines matching a given regex pattern. The project employed Maven as the project management tool as well as Java Stream APIs for efficient memory usage. The app is available on DockerHub and can be deployed using Docker.
+  - **JDBC App**: In Progress
+  - **Twitter App**: Not Started!
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/springboot)]: Not Started
 
@@ -31,7 +35,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
 
 
 ## Highlighted Projects
-**Athletic Tracking Assistant | Final Year Capstone Project**: Designed and built a smart video capturing device that follows a target throughout a training session or a game in order to provide real-time athletic performance. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department.
+**Athletic Tracking Assistant | Final Year Capstone Project**: Took part in an Agile work environment as a data engineer and lead various sprint ceremonies. Implemented multiple software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash to familiarize myself with the modern technologies used in today's industry.
 
 
 ## Professional Experiences
