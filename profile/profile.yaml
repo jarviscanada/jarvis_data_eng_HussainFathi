@@ -78,7 +78,8 @@ highlighted_projects:
     #URL is optional
     git_url:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Took part in an Agile work environment as a data engineer and lead various sprint ceremonies. Implemented multiple software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash to familiarize myself with the modern technologies used in today's industry."
+    description: "Designed and built a smart video capturing device that follows a target throughout a training session or a game in
+order to provide real time athletic performance analysis. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department."
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
