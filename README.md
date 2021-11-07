@@ -35,7 +35,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
 
 
 ## Highlighted Projects
-**Athletic Tracking Assistant | Final Year Capstone Project**: Took part in an Agile work environment as a data engineer and lead various sprint ceremonies. Implemented multiple software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash to familiarize myself with the modern technologies used in today's industry.
+**Athletic Tracking Assistant | Final Year Capstone Project**: Designed and built a smart video capturing device that follows a target throughout a training session or a game in order to provide real time athletic performance analysis. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department.
 
 
 ## Professional Experiences
