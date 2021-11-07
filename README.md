@@ -40,7 +40,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (2021-present)**: Took part in an Agile work environment as a data engineer and lead various sprint meetings. Implemented various software projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash.
+**Data Engineer, Jarvis (2021-present)**: Took part in an Agile work environment as a data engineer and lead various sprint meetings. Implemented multiple software related projects employing a wide range of technologies such as Java, SQL, Docker, Git and Bash.
 
 **Software Engineer, LatAm Startups (2021-present)**: Participated in internal and customer-driven design reviews to discuss the functionalities that need to be incorporated into the platform. Employed MEAN stack technologies to develop an enterprise platform from client to server to database.
 
