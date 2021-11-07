@@ -3,9 +3,9 @@
 ## Introduction
 The purpose of this project is to automate the process of searching through multiple files in order to find
 specific keywords. Given a directory, the following app searches through all the files and outputs a text file
-containing all the lines that matches a specified regex pattern. The app is developed in Java using IntelliJ Idea
-and Maven as the project management tool. For better efficiency Java Stream APIs are employed. The app
-is packaged using Docker.
+containing all the lines that matches an inputted regex pattern. The app is developed in Java using IntelliJ Idea
+and Maven as the project management tool. For better efficiency Java Stream APIs were employed. The app
+was packaged using Docker for easier distribution.
 
 ## Quick Start
 1. Firstly pull the Docker image from DockerHub:
@@ -61,6 +61,6 @@ package the project including all the dependencies required to run the app.
 
 ## Improvements
 * Currently, the app searches files in a single given directory. The following can be extended to 
-include multiple directories as well as nexted directories
-* Include the rest of the grep functionality such printing the line number alongside the output lines and the number of matches.
+include multiple directories as well as nested directories
+* Include the rest of the grep functionality such printing the line number alongside the output lines as well as the total number of matches.
 * Implement better error handling, in order to ensure easier debugging experience for the user.
