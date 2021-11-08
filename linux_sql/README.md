@@ -18,31 +18,31 @@ Technologies Used:
 ## Quick Start
 1. Firstly, a PSQL docker container needs to be created by running the `psql_docker.sh` script.
 ```bash
-bash scripts/psq_docker.sh create db_username psql_password
+bash scripts/psq_docker.sh create [db_username] [psql_password]
 ```
 
 2. Connect to the PSQL instance and create the database. 
 ```
 # connect to the psql instance
-psql -h localhost -U postgres -W
+psql -h [psql_host] -U [db_username] -W
 
-# create a database
+# create the database
 postgres=# CREATE DATABASE host_agent;
 ```
 
 3. Run the `ddl.sql` file to create the host_info and host_usage tables which used to store the data
 ```
-psql -h localhost -U psql_user -d host_agent -f sql/ddl.sql
+psql -h [psql_host] -U [psql_user] -d host_agent -f sql/ddl.sql
 ```
 
 4. Insert the hardware data into the host_info table
 ```bash
-bash scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+bash scripts/host_info.sh [psql_host] [psql_port] host_agent [psql_user] [psql_password]
 ```
 
 5. Insert the usage data into the host_usage table
 ```bash
-bash scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+bash scripts/host_usage.sh [psql_host] [psql_port] host_agent [psql_user] [psql_password]
 ```
 
 6. `host_usage.sh` script needs to be automated with crontab in order for usage data to be collected every one minute.
@@ -51,7 +51,7 @@ bash scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
 bash> crontab -e
 
 #add the code below to the crontab file
-* * * * * bash <FULL PATH>/scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
+* * * * * bash <FULL PATH>/scripts/host_usage.sh [psql_host] [psql_port] host_agent [psql_user] [psql_password] > /tmp/host_usage.log
 
 #list crontab jobs to make sure the job is running
 crontab -l
@@ -59,7 +59,7 @@ crontab -l
 
 7. Start analyzing your machine's data by running the `queries.sql` file.
 ```
-psql -h localhost -U psql_user -d host_agent -f sql/queries.sql
+psql -h [psql_host] -U [psql_user] -d host_agent -f sql/queries.sql
 ```
 
 ## Implementation
@@ -83,7 +83,7 @@ The Scripts employed in this project are:
 > Script to create, start or stop the PSQL docker container. PSQL environment variables such
 > as username and password must be passed in to create the container.
 ```bash
-bash scripts/psq_docker.sh create|star|stop db_username psql_password
+bash scripts/psq_docker.sh [create|star|stop] [db_username] [psql_password]
 ```
 
 * **host_info.sh**
@@ -91,14 +91,14 @@ bash scripts/psq_docker.sh create|star|stop db_username psql_password
 > the host_info table. The hostname, port number, database name, PSQL username and PSQL password
 > must be passed in when calling the script.
 ```bash
-bash scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+bash scripts/host_info.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
 ```
 * **host_usage.sh**
 > Scripts to retrieve the machine's usage data and inserts it into the database, specifically
 > the host_usage table. Just like the host_info script, the hostname, port number, database name,
 > PSQL username and PSQL password must be passed in when calling the script.
 ```bash
-bash scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+bash scripts/host_usage.sh [psql_host] [psql_port] [db_name] [psql_user] [psql_password]
 ```
 
 * **crontab**
@@ -108,14 +108,14 @@ bash scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
 > Creates the host_info and host_usage SQL tables to store the machine's hardware data and 
 > usage data respectively
 ```
-psql -h localhost -U psql_user -d host_agent -f sql/ddl.sql
+psql -h [psql_host] -U [psql_user] -d host_agent -f sql/ddl.sql
 ```
 
 * **queries.sql**
 > Contains a collection of SQL queries that can be useful for analyzing the machine's usage
 > data
 ```
-psql -h localhost -U psql_user -d host_agent -f sql/queries.sql
+psql -h [psql_host] -U [psql_user] -d host_agent -f sql/queries.sql
 ```
 
 ### Database Modelling
