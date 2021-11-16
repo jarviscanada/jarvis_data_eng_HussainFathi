@@ -27,7 +27,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
             //calling the parent method, but it will call overridden methods in this class
             javaGrepImp.process();
         } catch (Exception ex){
-            ex.printStackTrace();
+            javaGrepImp.logger.error("Error: Unable to process", ex);
         }
     }
 
