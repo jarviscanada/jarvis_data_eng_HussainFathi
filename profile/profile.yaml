@@ -10,7 +10,7 @@ summary: I am a recent Electrical and Biomedical Engineering graduate from McMas
   Java Grep and Java Twitter apps. In addition to Jarvis, I'm also currently working as a Software Engineer at a startup company based in Toronto. My role is centered around employing MEAN stack technologies to design, develop, and test an enterprise-level platform targeted towards helping international startup companies to enter the North American markets.
   Throughout my undergraduate career, I have completed 16 months worth of internship experiences in
   the fields of Machine Learning and Software development at the Department of National Defence in Ottawa and
-  Adlib Software utilizing various technologies such as python ML libraries, MATLAB and the .NET Framework. I'm really passionate about computer science because it introduces a way of thinking that can be used to address
+  Adlib Software. During my internships, I had the chance to utilize various technologies such as python ML libraries, MATLAB and the .NET Framework. I'm really passionate about computer science because it introduces a way of thinking that can be used to address
   specific problems we're facing in our daily lives.
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -50,7 +50,7 @@ jarvis_projects:
     description:
       - "**Grep App**: Developed a Java application that searches through all the files in a given directory and outputs a text file containing all the lines matching a given regex pattern. The project employed Maven as the project management tool as well as Java Stream APIs for efficient memory usage. The app is available on DockerHub and can be deployed using Docker."
 
-      - "**JDBC App**: Utilized the JDBC API to connect to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations. The application was built using Java with IntelliJ as the IDE along with Maven as the project management tool"
+      - "**JDBC App**: Utilized the JDBC API to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations on the data. The application was built using Java with IntelliJ IDEA as the IDE along with Maven as the project management tool"
 
       - "**Twitter App**: In Progress!"
 
@@ -64,7 +64,7 @@ highlighted_projects:
     git_url:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Designed and built a smart video capturing device that follows a target throughout a training session or a game in
-order to provide real time athletic performance analysis. In this project, a Simulink model was uploaded onto the Arduino for real time ECG signal acquisition, processing and analysis. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department."
+order to provide real time athletic performance analysis. In this project, a Simulink model was uploaded onto an Arduino microcontroller for real time ECG signal acquisition, processing and analysis. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department."
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -81,7 +81,7 @@ professional_experience:
   - title: "Software Engineer"
     company: "LatAm Startups"
     duration: "2021-present"
-    description: "Participated in internal and customer-driven design reviews to discuss the functionalities that need to be incorporated into the platform. Employed MEAN stack technologies to develop an enterprise platform from client to server to database."
+    description: "Participated in internal and customer-driven design reviews to discuss the functionalities that need to be incorporated into the platform. Employed MEAN stack technologies to develop and test an enterprise platform from client to server to database."
   - title: "Software Engineer Intern"
     company: "Department of National Defence"
     duration: "2020"
