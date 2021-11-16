@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 public class OrderDAO extends DataAccessObject<Order> {
 
@@ -24,6 +27,9 @@ public class OrderDAO extends DataAccessObject<Order> {
             "  join order_item ol on ol.order_id=o.order_id\n" +
             "  join product p on ol.product_id = p.product_id\n" +
             "where o.order_id = ?;";
+
+    private static final Logger logger = LoggerFactory.getLogger(OrderDAO.class);
+
 
     public OrderDAO(Connection connection) {
         super(connection);
@@ -63,7 +69,7 @@ public class OrderDAO extends DataAccessObject<Order> {
             }
             order.setOrderLines(orderLines);
         }catch(SQLException e){
-            e.printStackTrace();
+            OrderDAO.logger.error("Error: failed to get order by ID", e);
             throw new RuntimeException(e);
         }
         return order;    }
