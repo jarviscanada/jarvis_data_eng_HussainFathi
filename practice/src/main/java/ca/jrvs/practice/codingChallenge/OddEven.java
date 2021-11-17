@@ -4,7 +4,7 @@ package ca.jrvs.practice.codingChallenge;
  * ticket: https://www.notion.so/jarviscanada/Check-if-a-number-is-even-or-odd-4cbdd9acd9504c04b9b4ef0213f8084d
  */
 
-public class oddEven {
+public class OddEven {
 
     /**
      * Big-O: O(1)
@@ -31,6 +31,4 @@ public class oddEven {
            return "even";
        }
     }
-
-
 }
