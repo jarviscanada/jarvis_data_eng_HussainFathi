@@ -1,5 +1,7 @@
 package ca.jrvs.apps.grep;
 
+import org.apache.log4j.BasicConfigurator;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,6 +19,9 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
             throw new IllegalArgumentException("Usage: JavaGrep regex rootPath outFile");
         }
 
+        //Use default logger config
+        BasicConfigurator.configure();
+
         //creating JavaGrepLambdaImp object instead of JavaGrepImp
         JavaGrepLambdaImp javaGrepImp = new JavaGrepLambdaImp();
         javaGrepImp.setRegex(args[0]);
@@ -27,7 +32,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
             //calling the parent method, but it will call overridden methods in this class
             javaGrepImp.process();
         } catch (Exception ex){
-            ex.printStackTrace();
+            javaGrepImp.logger.error("Error: Unable to process", ex);
         }
     }
 
