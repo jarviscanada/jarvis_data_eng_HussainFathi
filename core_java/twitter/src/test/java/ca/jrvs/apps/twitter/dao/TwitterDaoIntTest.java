@@ -14,7 +14,7 @@ import java.io.IOException;
 
 import static org.junit.Assert.*;
 
-public class TwitterDaoInTest {
+public class TwitterDaoIntTest {
 
     private TwitterDao twitterDao;
 
@@ -56,7 +56,7 @@ public class TwitterDaoInTest {
         String hashTag = "#APITest";
         String text = "@Twitter Create Test " + hashTag;
 
-        //Tweet ID to be deleted
+        //Tweet ID to find
         String id = "1464073716799885312";
 
         Tweet tweet = twitterDao.findById(id);
@@ -77,7 +77,7 @@ public class TwitterDaoInTest {
         String hashTag = "#APITest";
         String text = "@Twitter Create Test " + hashTag;
 
-        //Tweet ID to find
+        //Tweet ID to be deleted
         String id = "1464073716799885312";
 
         Tweet tweet = twitterDao.deleteById(id);
