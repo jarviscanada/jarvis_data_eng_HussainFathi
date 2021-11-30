@@ -85,7 +85,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
             return uri;
         } catch (URISyntaxException e) {
             TwitterDao.logger.error("ERROR: Invalid URI", e);
-            throw new RuntimeException(e);
+            throw new RuntimeException("ERROR: Invalid URI", e);
         }
     }
 
@@ -94,12 +94,12 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         int responseStatus = response.getStatusLine().getStatusCode();
         if (expectedStatusCode != responseStatus){
             TwitterDao.logger.error("ERROR: Unexpected HTTP status " + responseStatus);
-            throw new RuntimeException();
+            throw new RuntimeException("ERROR: Unexpected HTTP status " + responseStatus);
         }
 
         if (response.getEntity() == null){
             TwitterDao.logger.error("ERROR: Empty response body");
-            throw new RuntimeException();
+            throw new RuntimeException("ERROR: Empty response body");
         }
 
         //Convert response entity to Tweet object
@@ -107,7 +107,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
             tweet = JsonParser.toObjectFromJson(EntityUtils.toString(response.getEntity()), Tweet.class);
         } catch (IOException e) {
             TwitterDao.logger.error("ERROR: Unable to convert response entity to Tweet Object",  e);
-            throw new RuntimeException(e);
+            throw new RuntimeException("ERROR: Unable to convert response entity to Tweet Object", e);
         }
 
         return tweet;
@@ -118,7 +118,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
             return new URI(API_BASE_URI + DELETE_PATH + QUERY_SYM + "id" + EQUAL + s);
         } catch (URISyntaxException e) {
             TwitterDao.logger.error("ERROR: Unable to create delete by ID URI", e);
-            throw new RuntimeException(e);
+            throw new RuntimeException("ERROR: Unable to create delete by ID URI", e);
         }
     }
 
@@ -127,7 +127,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
            return new URI(API_BASE_URI + SHOW_PATH + QUERY_SYM + "id" + EQUAL + s);
         } catch (URISyntaxException e) {
             TwitterDao.logger.error("ERROR: Unable to create find by ID URI", e);
-            throw new RuntimeException(e);
+            throw new RuntimeException("ERROR: Unable to create find by ID URI", e);
         }
     }
 }

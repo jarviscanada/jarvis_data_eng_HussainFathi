@@ -87,7 +87,7 @@ public class TwitterService implements Service {
         for (String id : ids) {
             if (!id.matches("[0-9]+")) {
                 TwitterService.logger.error("ERROR: Invalid ID " + id);
-                throw new RuntimeException();
+                throw new RuntimeException("ERROR: Invalid ID " + id);
             }
             deletedTweets.add((Tweet) crdDao.deleteById(id));
         }
@@ -98,7 +98,7 @@ public class TwitterService implements Service {
         String message = tweet.getText();
         if (message.length() > 140){
             TwitterService.logger.error("ERROR: Number of characters in the Tweet exceeds 140 characters");
-            throw new RuntimeException();
+            throw new RuntimeException("ERROR: Number of characters in the Tweet exceeds 140 characters");
         }
 
         if (tweet.getCoordinates() != null){
@@ -107,7 +107,7 @@ public class TwitterService implements Service {
             double lat = coordinates.getCoordinates()[1];
             if (lon > LON_MAX || lon < LON_MIN || lat > LAT_MAX || lat < LAT_MIN){
                 TwitterService.logger.error("ERROR: Tweet coordinates out of range");
-                throw new RuntimeException();
+                throw new RuntimeException("ERROR: Tweet coordinates out of range");
             }
         }
     }
@@ -117,7 +117,7 @@ public class TwitterService implements Service {
             Double.parseDouble(id);
         }catch (NumberFormatException e){
             TwitterService.logger.error("ERROR: Invalid ID",e);
-            throw new RuntimeException();
+            throw new RuntimeException("ERROR: Invalid ID",e);
         }
 
         String[] validFields = {"created_at", "id", "id_str", "text", "entities", "coordinates",
@@ -127,7 +127,7 @@ public class TwitterService implements Service {
             Arrays.stream(fields).forEach(field -> {
                 if (!validFieldsAsList.contains(field)){
                     TwitterService.logger.error("ERROR: Invalid field " + field);
-                    throw new RuntimeException();
+                    throw new RuntimeException("ERROR: Invalid field " + field);
                 }
             });
         }

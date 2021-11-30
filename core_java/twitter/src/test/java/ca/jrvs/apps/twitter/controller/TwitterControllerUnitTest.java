@@ -1,8 +1,7 @@
-package ca.jrvs.apps.twitter.service;
+package ca.jrvs.apps.twitter.controller;
 
-import ca.jrvs.apps.twitter.dao.CrdDao;
 import ca.jrvs.apps.twitter.model.Tweet;
-import ca.jrvs.apps.twitter.util.TweetBuilder;
+import ca.jrvs.apps.twitter.service.Service;
 import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
@@ -14,83 +13,90 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.junit.Assert.*;
 
-
 @RunWith(MockitoJUnitRunner.class)
-public class TwitterServiceUnitTest {
+public class TwitterControllerUnitTest {
 
     @Mock
-    CrdDao crdDao;
+    Service service;
 
     @InjectMocks
-    TwitterService twitterService;
+    TwitterController twitterController;
 
     @Test
     public void postTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-        when(crdDao.create(any())).thenReturn(new Tweet());
-        double lon = 50;
-        double lat = 50;
+        //test arguments
+        double lon = 10.2;
+        double lat = 50.5;
+        String command = "post";
+        String text = "Twitter API test";
+        String coord = lat + ":" + lon;
+
+        when(service.postTweet(any())).thenReturn(new Tweet());
 
         //Test#1: No exception expected
-        String text = "test";
-        Tweet tweet = twitterService.postTweet(TweetBuilder.buildTweet(text, lon, lat));
+        String[] args = {command, text, coord};
+        Tweet tweet = twitterController.postTweet(args);
         assertNotNull(tweet);
 
         //Test#2: Exception expected
-        String textException = new String(new char[190]);
+        String[] argsException = {command, coord};
         try {
-            twitterService.postTweet(TweetBuilder.buildTweet(textException, lon, lat));
+            twitterController.postTweet(argsException);
             fail();
-        }catch (RuntimeException e){
+        }catch (IllegalArgumentException e){
             assertTrue(true);
         }
     }
 
     @Test
     public void showTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
+        String command = "show";
+        String id = "1465779434334609416";
+        String fields = "created_at,id,id_str,text,retweeted";
 
-        when(crdDao.findById(any())).thenReturn(new Tweet());
-        String id = "1234567";
+        when(service.showTweet(any(), any())).thenReturn(new Tweet());
 
         //Test#1: No exception expected
-        String[] validFields = {"created_at", "id", "id_str", "text", "entities",
-                "coordinates"};
-        Tweet tweet = twitterService.showTweet(id, validFields);
+        String[] args = {command, id, fields};
+        Tweet tweet = twitterController.showTweet(args);
         assertNotNull(tweet);
 
         //Test#2: Exception expected
-        String[] invalidFields = {"created_at", "id", "id_string", "text", "entities",
-                "coordinates"};
+        String[] argsException = {command, id, fields, fields};
         try {
-            twitterService.showTweet(id, invalidFields);
+            twitterController.showTweet(argsException);
             fail();
-        }catch (RuntimeException e){
+        }catch (IllegalArgumentException e){
             assertTrue(true);
         }
     }
 
     @Test
     public void deleteTweet() throws OAuthMessageSignerException, OAuthExpectationFailedException, IOException, OAuthCommunicationException {
-        when(crdDao.deleteById(any())).thenReturn(new Tweet());
+        String command = "delete";
+        String ids = "123456,4590642";
+
+        when(service.deleteTweets(any())).thenReturn(new ArrayList<Tweet>());
 
         //Test#1: No exception expected
-        String[] ids = {"123456", "654096"};
-        List<Tweet> tweets = twitterService.deleteTweets(ids);
+        String[] args = {command, ids};
+        List tweets = twitterController.deleteTweet(args);
         assertNotNull(tweets);
 
         //Test#2: Exception expected
-        String[] invalidIds = {"3289064", "456h6"};
+        String[] argsException = {command, ids, ids};
         try {
-            twitterService.deleteTweets(invalidIds);
+            twitterController.deleteTweet(argsException);
             fail();
-        }catch (RuntimeException e) {
+        }catch (IllegalArgumentException e){
             assertTrue(true);
         }
-
     }
 }

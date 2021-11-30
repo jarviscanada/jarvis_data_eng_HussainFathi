@@ -17,7 +17,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class ServiceIntTest {
+public class TwitterServiceIntTest {
 
     private TwitterDao twitterDao;
     private TwitterService twitterService;
