@@ -56,7 +56,7 @@ The five major implementation components are:
 
 * **TwitterController.java**
 > In this file the user arguments are parsed and passed on to the Service layer. The results are
-> returned to be displayed for the user
+> returned to be displayed for the user.
 
 * **TwitterService.java**
 > This file handles the business logic and ensures that the user arguments are valid. For instance, it 
@@ -102,7 +102,7 @@ Below are sample outputs obtained for the post, show and delete commands:
 ![postTwitter](assets/postTwitter.JPG)
 
 ### Sample Show output
-Show below is a Tweet posted by Lebron James:
+Shown below is a Tweet posted by Lebron James:
 
 ![showCLI](assets/showCLI.JPG)
 
