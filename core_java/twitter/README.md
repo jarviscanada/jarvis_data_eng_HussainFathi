@@ -91,7 +91,7 @@ the Twitter Application.
 **JUnit** was used to control test class workflow. For each `@Test` case/method, Assertion was
 used to compare the actual result with the expected result.
 
-**Mockito** was used for Unit testing to test the individual classes in isolation. This is
+**Mockito** was used for Unit testing to test the individual classes in isolation. This was
 done by mocking the class dependencies such that they return the expected result when they
 are called.
 
@@ -103,10 +103,12 @@ Below are sample outputs obtained for the post, show and delete commands:
 
 ### Sample Show output
 Show below is a Tweet posted by Lebron James:
+
 ![showCLI](assets/showCLI.JPG)
 
 ### Sample Delete output
 The Tweet posted previously containing the "test" text is now deleted.
+
 ![deleteCLI](assets/deleteCLI.JPG)
 ![deleteTwitter](assets/deleteTwitter.JPG)
 
