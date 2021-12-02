@@ -27,7 +27,6 @@ public class TwitterCLIApp {
 
     private static final String USAGE = "USAGE: TwitterCLIApp post|show|delete [option]";
     private Controller controller;
-    private static final Logger logger = LoggerFactory.getLogger(TwitterCLIApp.class);
 
     @Autowired
     public TwitterCLIApp(Controller controller){
@@ -73,7 +72,6 @@ public class TwitterCLIApp {
         try {
             System.out.println(JsonParser.toJson(tweet,true,false));
         }catch (JsonProcessingException e){
-            TwitterCLIApp.logger.error("Error: Unable to convert Twee object to string",e);
             throw new RuntimeException("Error: Unable to convert Twee object to string",e);
         }
     }

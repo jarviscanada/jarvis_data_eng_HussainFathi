@@ -22,7 +22,6 @@ import java.util.List;
 public class TwitterService implements Service {
 
     private CrdDao crdDao;
-    private static final Logger logger = LoggerFactory.getLogger(TwitterService.class);
     private static final int CHARACTER_LIMIT = 140;
     private static final double LON_MIN = -180;
     private static final double LON_MAX = 180;
@@ -43,6 +42,9 @@ public class TwitterService implements Service {
 
     @Override
     public Tweet showTweet(String id, String[] fields) throws OAuthMessageSignerException, OAuthExpectationFailedException, URISyntaxException, IOException, OAuthCommunicationException {
+        if (fields == null){
+            return (Tweet) crdDao.findById(id);
+        }
         validateShowTweet(id, fields);
         Tweet tweet =  (Tweet) crdDao.findById(id);
         List<String> fieldsAsList = Arrays.asList(fields);
@@ -86,7 +88,6 @@ public class TwitterService implements Service {
         List<Tweet> deletedTweets = new ArrayList<>();
         for (String id : ids) {
             if (!id.matches("[0-9]+")) {
-                TwitterService.logger.error("ERROR: Invalid ID " + id);
                 throw new RuntimeException("ERROR: Invalid ID " + id);
             }
             deletedTweets.add((Tweet) crdDao.deleteById(id));
@@ -97,7 +98,6 @@ public class TwitterService implements Service {
     private void validatePostTweet(Tweet tweet){
         String message = tweet.getText();
         if (message.length() > 140){
-            TwitterService.logger.error("ERROR: Number of characters in the Tweet exceeds 140 characters");
             throw new RuntimeException("ERROR: Number of characters in the Tweet exceeds 140 characters");
         }
 
@@ -106,7 +106,6 @@ public class TwitterService implements Service {
             double lon = coordinates.getCoordinates()[0];
             double lat = coordinates.getCoordinates()[1];
             if (lon > LON_MAX || lon < LON_MIN || lat > LAT_MAX || lat < LAT_MIN){
-                TwitterService.logger.error("ERROR: Tweet coordinates out of range");
                 throw new RuntimeException("ERROR: Tweet coordinates out of range");
             }
         }
@@ -116,7 +115,6 @@ public class TwitterService implements Service {
         try {
             Double.parseDouble(id);
         }catch (NumberFormatException e){
-            TwitterService.logger.error("ERROR: Invalid ID",e);
             throw new RuntimeException("ERROR: Invalid ID",e);
         }
 
@@ -126,7 +124,6 @@ public class TwitterService implements Service {
         if (fields != null){
             Arrays.stream(fields).forEach(field -> {
                 if (!validFieldsAsList.contains(field)){
-                    TwitterService.logger.error("ERROR: Invalid field " + field);
                     throw new RuntimeException("ERROR: Invalid field " + field);
                 }
             });

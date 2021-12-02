@@ -35,6 +35,19 @@ public class TwitterHttpHelper implements HttpHelper {
     }
 
     /**
+     * Constructor
+     */
+    public TwitterHttpHelper(){
+        String consumerKey = System.getenv("consumerKey");
+        String consumerSecret = System.getenv("consumerSecret");
+        String accessToken = System.getenv("accessToken");
+        String tokenSecret = System.getenv("tokenSecret");
+        consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
+        consumer.setTokenWithSecret(accessToken, tokenSecret);
+        httpClient = HttpClientBuilder.create().build();
+    }
+
+    /**
      * Sends a POST request to the Twitter API
      * @param uri Twitter endpoint uri
      * @return HTTP response
