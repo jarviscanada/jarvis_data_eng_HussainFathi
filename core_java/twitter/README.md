@@ -66,7 +66,7 @@ The five major implementation components are:
 * **TwitterDao.java**
 > This layer constructs the URI which is used to make the HTTP requests to the Twitter API 
 > in the `TwitterHttpHelper.java` file. It also deserializes the response received from the 
-> Twitter API
+> Twitter API.
 
 * **TwitterHttpHelper.java**
 > This file makes the HTTP request (create, read or delete a Tweet) to the Twitter API using the URI sent from the `TwitterDao.java`
