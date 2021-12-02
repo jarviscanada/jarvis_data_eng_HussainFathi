@@ -1,12 +1,12 @@
-#Twitter CRD App
-##Introduction
+# Twitter CRD App
+## Introduction
 The Twitter CRD app provides a way to CRD (Create, Read and Delete) tweets through a CLI by calling
 the Twitter REST API. Twitter API keys obtained from the Twitter Developer account are required
 to use the app. The application was developed using Java and structured with Maven and Springboot.
 In addition, Mockito and JUnit were used for unit and integration testing. Deployed using Docker 
 and is available on DockerHub.
 
-##Quick Start
+## Quick Start
 1. Firstly, pull the Docker image from DockerHub:
 ```
 docker pull hfathi22/twitter
@@ -42,8 +42,8 @@ by passing the corresponding Tweet IDs seperated by a comma:
 docker run hfathi22/twitter delete tweet_id_1,tweet_id_2,tweet_id_3...
 ```
 
-##Design
-###UML Diagram
+## Design
+### UML Diagram
 ![UML](assets/UML.jpg)
 
 The five major implementation components are:
@@ -72,19 +72,19 @@ The five major implementation components are:
 > This file makes the HTTP request (create, read or delete a Tweet) to the Twitter API using the URI sent from the `TwitterDao.java`
 > file.
 
-###Models
+### Models
 The figure below shows the models used in this app. The Tweet model depends on four other models.
 
 ![model](assets/model.png)
 
-###Spring
+### Spring
 Spring framework was employed in this app for dependency management which helps avoid the manual,
 error-prone setup of dependencies within the Java application. Spring uses annotations such as `@Component` and
 its specializations: `@Service`, `@Repository` and `@Controller` to mark what are called 
 beans which are managed by the IoC container. The IoC container injects those dependencies 
 when it creates the bean.
 
-##Testing
+## Testing
 Unit testing as well as integration testing were employed to test all the functionalities of 
 the Twitter Application. 
 
@@ -97,24 +97,24 @@ are called.
 
 Below are sample outputs obtained for the post, show and delete commands:
 
-###Sample Post Output
+### Sample Post Output
 ![postCLI](assets/postCLI.JPG)
 ![postTwitter](assets/postTwitter.JPG)
 
-###Sample Show output
+### Sample Show output
 Show below is a Tweet posted by Lebron James:
 ![showCLI](assets/showCLI.JPG)
 
-###Sample Delete output
+### Sample Delete output
 The Tweet posted previously containing the "test" text is now deleted.
 ![deleteCLI](assets/deleteCLI.JPG)
 ![deleteTwitter](assets/deleteTwitter.JPG)
 
-##Deployment
+## Deployment
 To ensure easier distribution, the app was deployed as a Docker image on DockerHub. The image
 can be pulled using the docker command on the CLI `docker pull hfathi22/twitter`.
 
-##Improvements
+## Improvements
 * Currently, the "show" command only shows a single Tweet at one. Including the functionality
 of retrieving and showing multiple Tweets can be useful in terms of data analysis.
 * Another improvement can be automating the posting of tweets based on the specified inputted time.
