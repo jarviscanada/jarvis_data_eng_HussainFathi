@@ -52,7 +52,7 @@ jarvis_projects:
 
       - "**JDBC App**: Utilized the JDBC API to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations on the data. The application was built using Java with IntelliJ IDEA as the IDE along with Maven as the project management tool"
 
-      - "**Twitter App**: In Progress!"
+      - "**Twitter App**: Developed a Twitter CLI that allows the user to CRD (Create, Read and Delete) tweets through the command line by calling the Twitter REST API. The application was developed in Java and structured using Maven and Springboot. Packaged using Docker and can be obtained from DockerHub."
 
 
 # List of personal or academic projects
