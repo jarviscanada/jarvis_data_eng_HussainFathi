@@ -3,7 +3,7 @@
 The Twitter CRD app provides a way to CRD (Create, Read and Delete) tweets through a CLI by calling
 the Twitter REST API. Twitter API keys obtained from the Twitter Developer account are required
 to use the app. The application was developed using Java and structured with Maven and Springboot.
-In addition, Mockito and JUnit were used for unit and integration testing. Deployed using Docker 
+In addition, Mockito and JUnit were used for unit and integration testing. Packaged using Docker 
 and is available on DockerHub.
 
 ## Quick Start
