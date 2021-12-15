@@ -21,7 +21,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
       
   - **Grep App**: Developed a Java application that searches through all the files in a given directory and outputs a text file containing all the lines matching a given regex pattern. The project employed Maven as the project management tool as well as Java Stream APIs for efficient memory usage. The app is available on DockerHub and can be deployed using Docker.
   - **JDBC App**: Utilized the JDBC API to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations on the data. The application was built using Java with IntelliJ IDEA as the IDE along with Maven as the project management tool
-  - **Twitter App**: In Progress!
+  - **Twitter App**: Developed a Twitter CLI that allows the user to CRD (Create, Read and Delete) tweets through the command line by calling the Twitter REST API. The application was developed in Java and structured using Maven and Springboot. Packaged using Docker and can be obtained from DockerHub.
 
 
 ## Highlighted Projects
