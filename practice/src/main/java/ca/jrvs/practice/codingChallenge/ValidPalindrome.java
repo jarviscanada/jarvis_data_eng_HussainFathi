@@ -35,4 +35,33 @@ public class ValidPalindrome {
         }
         return true;
     }
+
+
+    /**
+     * This method solves the ValidPalindrome question using the recursion approach
+     * This method has a time complexity of O(n)
+     * @param s string of text
+     * @return
+     */
+    public boolean recursionImp(String s){
+        String cleanText = s.replaceAll("[^a-zA-z]", "");
+        return recursion(cleanText, 0, cleanText.length());
+    }
+
+    private boolean recursion(String s, int start, int end){
+        if (start >= end){
+            return true;
+        }
+
+        else if (s.charAt(start) == s.charAt(end)){
+            start++;
+            end--;
+            return recursion(s,start,end);
+        }
+
+        else {
+            return false;
+        }
+    }
+
 }
