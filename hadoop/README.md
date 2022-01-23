@@ -15,7 +15,7 @@ nodes.
 
 ### Big Data Tools Used
 * **Hadoop**
-> Is an open source framework that is used to efficiently store and process large datasets 
+> Is an open-source framework that is used to efficiently store and process large datasets 
 > in a distributed fashion.
 
 * **Hadoop Distributed File System (HDFS)**
