@@ -2,7 +2,7 @@
 
 ## Introduction
 In this project, Apache Hadoop was employed to analyze and process the World Development 
-Indicators (WDI) which contains about 22 million data points.
+Indicators (WDI) dataset which contains about 22 million data points.
 
 The project was built using Hadoop and Hive. Hadoop cluster was provisioned using Google
 Cloud Platform (GCP). All queries and their respective results were saved to a Zeppelin notebook
