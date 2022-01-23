@@ -31,11 +31,11 @@ nodes.
 
 * **MapReduce**
 > Is a programming model that allows for data processing in batches. As the name suggests
-> MapReduce is divided into two phases: the map phase which distribute and transform the data 
-> and the reduce phase which aggregate the data for a result.
+> MapReduce is divided into two phases: the map phase which distributes and transforms the data 
+> and the reduce phase which aggregates the data for a result.
 
 * **Hive**
-> Is an application that runs on top of the Hadoop framework and provides an SQL like interface
+> Is an application that runs on top of the Hadoop framework and provides an SQL-like interface
 > for processing/querying data.
 
 The Hadoop cluster was provisioned using Google Cloud Platform's Dataproc. One master node
@@ -43,17 +43,17 @@ and two worker nodes were employed, each containing 12 GB of memory with 100 GB 
 
 ## Hive Project
 The utilization of optimization tools is essential when processing and analyzing big datasets.
-In this project the World Development Indicators (WDI) dataset was analyzed which contained 
+In this project, the World Development Indicators (WDI) dataset was analyzed which contained 
 about 22 million rows of data occupying around 2.2 GB of space. The data was firstly exported
-from GCP storage to HDFS. Afterwards, the data was examined using the following optimization
+from GCP storage to HDFS. Afterward, the data was examined using the following optimization
 tools:
 
-* **Partitioning**: Which basically breaks down the data into smaller chunks allowing data 
+* **Partitioning**: This basically breaks down the data into smaller chunks allowing data 
 access to be more efficient since only a specific partition can be loaded into memory instead of
 the entire dataset.
 
 
-* **Columnar File Format**: Stores the data in a column oriented structure. This allows data
+* **Columnar File Format**: Stores the data in a column-oriented structure. This allows data
 retrieval to be much faster since in the case we need a vale from each row in the table, they
 all can be found in one column. Without the columnar file format, each row in the table will
 need to be visited to retrieve the required data.
