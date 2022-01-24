@@ -27,12 +27,12 @@ nodes.
 > and scheduling tasks to be executed on different cluster nodes.
 
 * **Zeppelin**
-> Online notebook that enables the user to process and analyze the data on your Hadoop cluster.
+> Online notebook that enables the user to process and analyze the data on a Hadoop cluster.
 
 * **MapReduce**
 > Is a programming model that allows for data processing in batches. As the name suggests
-> MapReduce is divided into two phases: the map phase which distributes and transforms the data 
-> and the reduce phase which aggregates the data for a result.
+> MapReduce is divided into two phases: the map phase which transforms the data into a Key-Value pair
+> and the reduce phase which aggregates the Key-Value pair input for a result.
 
 * **Hive**
 > Is an application that runs on top of the Hadoop framework and provides an SQL-like interface
