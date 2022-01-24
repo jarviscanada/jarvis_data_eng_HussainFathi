@@ -32,7 +32,7 @@ nodes.
 * **MapReduce**
 > Is a programming model that allows for data processing in batches. As the name suggests
 > MapReduce is divided into two phases: the map phase which transforms the data into a Key-Value pair
-> and the reduce phase which aggregates the Key-Value pair input for a result.
+> and the reduce phase which aggregates the Key-Value pair input for the result.
 
 * **Hive**
 > Is an application that runs on top of the Hadoop framework and provides an SQL-like interface
