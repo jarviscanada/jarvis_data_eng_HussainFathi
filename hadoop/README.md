@@ -22,7 +22,7 @@ nodes.
 > Is a distributed file system. It utilizes the master/slave architecture to tackle big data
 > problems.
 
-* **Yet Another Resource Negotiator**
+* **Yet Another Resource Negotiator (YARN)**
 > Responsible for allocating system resources to the various applications running in a Hadoop cluster 
 > and scheduling tasks to be executed on different cluster nodes.
 
