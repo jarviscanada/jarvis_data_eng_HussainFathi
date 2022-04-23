@@ -53,7 +53,9 @@ jarvis_projects:
       - "**JDBC App**: Utilized the JDBC API to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations on the data. The application was built using Java with IntelliJ IDEA as the IDE along with Maven as the project management tool"
 
       - "**Twitter App**: Developed a Twitter CLI that allows the user to CRD (Create, Read and Delete) tweets through the command line by calling the Twitter REST API. The application was developed in Java and structured using Maven and Springboot. Packaged using Docker and can be obtained from DockerHub."
-
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: "In this project, the World Development Indicators (WDI) dataset was processed and analyzed using Apache Hadoop. Built using Hadoop and Hive. Hadoop cluster was provisioned using Google Cloud Platform (GCP). All queries and results were save to a Zeppelin notebook."
 
 # List of personal or academic projects
 # Feel free to add more projects

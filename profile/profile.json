@@ -33,6 +33,11 @@
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
+    },
+    {
+      "description": "In this project, the World Development Indicators (WDI) dataset was processed and analyzed using Apache Hadoop. Built using Hadoop and Hive. Hadoop cluster was provisioned using Google Cloud Platform (GCP). All queries and results were save to a Zeppelin notebook.",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
     }
   ],
   "name": "Hussain Fathi",

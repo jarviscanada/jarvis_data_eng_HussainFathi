@@ -23,6 +23,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HussainFat
   - **JDBC App**: Utilized the JDBC API to connect the Java program with a PostgreSQL database. Data Access Object (DAO) was used to perform CRUD operations on the data. The application was built using Java with IntelliJ IDEA as the IDE along with Maven as the project management tool
   - **Twitter App**: Developed a Twitter CLI that allows the user to CRD (Create, Read and Delete) tweets through the command line by calling the Twitter REST API. The application was developed in Java and structured using Maven and Springboot. Packaged using Docker and can be obtained from DockerHub.
 
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HussainFathi/tree/master/hadoop)]: In this project, the World Development Indicators (WDI) dataset was processed and analyzed using Apache Hadoop. Built using Hadoop and Hive. Hadoop cluster was provisioned using Google Cloud Platform (GCP). All queries and results were save to a Zeppelin notebook.
+
 
 ## Highlighted Projects
 **Athletic Tracking Assistant | Final Year Capstone Project**: Designed and built a smart video capturing device that follows a target throughout a training session or a game in order to provide real time athletic performance analysis. In this project, a Simulink model was uploaded onto an Arduino microcontroller for real time ECG signal acquisition, processing and analysis. The project was awarded the best electronic hardware device by the Electrical and Computer Engineering (ECE) Department.
